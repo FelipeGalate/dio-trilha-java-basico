@@ -8,8 +8,7 @@ public class ContaTerminal {
 
         System.out.print("Por favor, digite o número da conta!\n");
         int numero = sc.nextInt();
-
-        String teste = sc.nextLine();
+        sc.nextLine();
         
         System.out.println("Por favor, digite o número da Agência!\n");
         String agencia = sc.nextLine();
@@ -21,12 +20,7 @@ public class ContaTerminal {
         Double saldo = sc.nextDouble();
 
         System.out.print("\033[H\033[2J"); 
-        
+
         System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.2f já está disponível para saque\n", nome, agencia, numero, saldo);
-
-
-
-
-        
     }
 }
